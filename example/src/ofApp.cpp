@@ -7,15 +7,12 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    db+=0.03;
-    if (db >= 1) db = 0;
-    dis.displayBrightness(db);
-    
+
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    db.setBrightness(ofRandom(1.0));
 }
 
 //--------------------------------------------------------------
@@ -45,6 +42,16 @@ void ofApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseEntered(int x, int y){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseExited(int x, int y){
 
 }
 
